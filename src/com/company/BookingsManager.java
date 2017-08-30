@@ -26,10 +26,6 @@ public class BookingsManager {
         }
     }
 
-    public ArrayList findBookingsBySessionId(int sessionId) {
-        return bookings.get(sessionId);
-    }
-
     public void saveBooking(Booking booking) {
         int sessionId = booking.getSessionId();
         if (bookings.size() == 0) {
